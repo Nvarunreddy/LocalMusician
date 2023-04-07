@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Topic Input Field -->
+    <TextView
+        android:id="@+id/topic_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Topic:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/topic_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topic_label"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Enter topic here" />
+
+    <!-- Date and Time Input Fields -->
+
+
+    <TextView
+        android:id="@+id/select_location"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/topic_input"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="bottom"
+        android:textSize="16sp"
+        android:text="Select Location" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/select_location"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/date_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Date and Time:"
+        android:inputType="datetime"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/date_time_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_time_label"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Select date and time" />
+
+
+    <!-- Date and Time Picker Buttons -->
+    <Button
+        android:id="@+id/date_picker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_time_input"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Select date" />
+
+    <Button
+        android:id="@+id/time_picker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_time_input"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Select time" />
+
+    <Button
+        android:id="@+id/add_schedule_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_picker_button"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Add schedule" />
+
+    <Button
+        android:id="@+id/schedule_list_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_schedule_button"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Go To Schedule List" />
+
+    <Button
+        android:id="@+id/my_bookings_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schedule_list_button"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Go To My Bookings" />
+
+</RelativeLayout>
